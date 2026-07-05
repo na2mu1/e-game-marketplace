@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Shirt, Sword, Smile, Car, Pet } from 'lucide-react';
+import { Shirt, Sword, Smile, Car, PawPrint } from 'lucide-react';
 
 interface InventoryViewerProps {
   gameType: 'freefire' | 'pubg' | 'efootball';
@@ -18,7 +18,7 @@ export default function InventoryViewer({ gameType, uid, equippedItems }: Invent
       { id: 'guns', label: 'গান স্কিন', icon: Sword },
       { id: 'emotes', label: 'ইমোট', icon: Smile },
       { id: 'vehicles', label: 'গাড়ি', icon: Car },
-      { id: 'pets', label: 'পেট', icon: Pet },
+      { id: 'pets', label: 'পেট', icon: PawPrint },
     ],
     pubg: [
       { id: 'outfits', label: 'আউটফিট', icon: Shirt },
